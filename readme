@@ -1,0 +1,20 @@
+Updated Design and Technique Statements
+
+Michael Owusu
+Sun Han
+Leo Rojas
+Joey Saenz
+
+Professor Davis
+Com Sci 151
+
+11/27/2013
+
+	We explored the unpredictability of figure making using variation in color, shape, and figures as our medium of change. To create shapes we used turtles. The turtles were used to create different polygons which in turn were combined to make different figures. The color varied in both the focus of the drawing, being the shapes the turtle created, as well as in the background. Color variations included background gradients, shape color, and the color of the figures we rendered. The color variations are based on preset color schemes. As there are ten color schemes, we used several types of schemes such as analogous colors, monochromatic colors, and complimentary colors. The shape of the figures as well as the number of shapes have allowed all of the variations to be aesthetically pleasing. The various figures create various visual effects such as uniformity, depth, and mesmerization.
+        We made turtle procedures that create sequences of different shapes. By applying lists of colors to small increments of our turtle drawings we can vary the colors with which our turtles draw. To do this we simply had our turtle change colors, choosing from a list of preset color schemes using list-ref. Our background colors are complementary to our turtle drawings using gradients. We made these gradients using image-compute. Variation will come from size, amount, and placement of the different turtle shape constructions as well as background texture and gradient.
+	In order to understand how image-series was written we look at the three let calls, hundred, ten, and one. Each value place holder signifies a different color, shape and background. We set the values of each place holder from 0 – 9 to represent a distinct color, shape and background. Using simple combinatorial counting we can see that 10 different variations of color, shape and background will render 10^3 many images, or  1000 images.The aspect ratio for our code must be in an equal ratio. The scaling is only proportional when the sides are of equal lengths. The beauty of our images come from square canvas.
+
+Some Particularly interesting images:
+(image-series 333 500 500)
+(image-series 732 500 500)
+
